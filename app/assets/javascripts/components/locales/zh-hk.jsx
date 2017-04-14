@@ -97,7 +97,7 @@ const zh_hk = {
   "status.show_less": "減少顯示",
   "status.show_more": "顯示更多",
   "tabs_bar.compose": "撰寫",
-  "tabs_bar.home": "家",
+  "tabs_bar.home": "主頁",
   "tabs_bar.local_timeline": "本站",
   "tabs_bar.mentions": "提及",
   "tabs_bar.notifications": "通知",
