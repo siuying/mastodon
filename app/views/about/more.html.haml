@@ -10,20 +10,6 @@
         - unless @instance_presenter.site_description.blank?
           %p= @instance_presenter.site_description.html_safe
 
-      .information-board
-        .section
-          %span= t 'about.user_count_before'
-          %strong= number_with_delimiter @instance_presenter.user_count
-          %span= t 'about.user_count_after'
-        .section
-          %span= t 'about.status_count_before'
-          %strong= number_with_delimiter @instance_presenter.status_count
-          %span= t 'about.status_count_after'
-        .section
-          %span= t 'about.domain_count_before'
-          %strong= number_with_delimiter @instance_presenter.domain_count
-          %span= t 'about.domain_count_after'
-
       .panel
         %h2 Rules
         .section
@@ -55,6 +41,22 @@
                 %li Inciting users to engage another user in continued interaction or discussion after a user has requested for said engagement with that user to cease and desist (informally called brigading or dogpiling) may be considered harassment.
           %p These provisions notwithstanding, the administration of the service reserves the right to revoke any user's access permissions, at any time, for any reason, except as limited by law.
 
+          %h2 Contact
+          %p You can contact me at Twitter [@siuying](http://twitter.com/siuying/) if you cannot contact me via [mastodon.hk](https://mastodon.hk/@siuying)
+
+      .information-board
+        .section
+          %span= t 'about.user_count_before'
+          %strong= number_with_delimiter @instance_presenter.user_count
+          %span= t 'about.user_count_after'
+        .section
+          %span= t 'about.status_count_before'
+          %strong= number_with_delimiter @instance_presenter.status_count
+          %span= t 'about.status_count_after'
+        .section
+          %span= t 'about.domain_count_before'
+          %strong= number_with_delimiter @instance_presenter.domain_count
+          %span= t 'about.domain_count_after'
     .sidebar
       .panel
         .panel-header= t 'about.contact'
