@@ -71,9 +71,15 @@
           = fa_icon('li check-square')
           = t 'about.features.api'
 
-  - unless @instance_presenter.site_description.blank?
-    %h3= t('about.description_headline', domain: Rails.configuration.x.local_domain)
-    %p= @instance_presenter.site_description.html_safe
+  .panel
+    %h3 甚麼是 mastodon.hk ？
+    %p 這是一個由香港人建立的 Mastodon instance。
+    %h3 基本規則
+    %ul
+      %li 禁止發佈任何觸犯香港法律的內容。
+      %li 互相尊重。
+    %p
+      = link_to '完整規則', about_more_path
 
   .actions
     .info
